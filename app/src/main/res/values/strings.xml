@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Plug</string>
+    <color name="c1">#0F8B8D</color>
+    <color name="c2"> #4F5D75</color>
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/c1"
+    tools:context="battery.plug.com.plug.MainActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:width="200dp"
+        android:text="Pin4"
+
+        android:layout_below="@+id/espID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin5"
+
+        android:layout_below="@+id/time4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin2"
+        android:layout_above="@+id/button4"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin16"
+        android:layout_above="@+id/button5"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin 0"
+        android:layout_above="@+id/button6"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin 15"
+        android:layout_above="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin 13"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin 12"
+        android:layout_above="@+id/button9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button7"
+        android:layout_alignEnd="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pin 14"
+        android:layout_alignTop="@+id/time14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8" />
+
+    <EditText
+        android:id="@+id/time4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_above="@+id/time5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/espID"
+        android:layout_toEndOf="@+id/espID" />
+
+    <EditText
+        android:id="@+id/time5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/time4"
+        android:layout_alignStart="@+id/time4"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button4"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignRight="@+id/time5"
+        android:layout_alignEnd="@+id/time5"
+        android:layout_alignLeft="@+id/time5"
+        android:layout_alignStart="@+id/time5" />
+
+    <EditText
+        android:id="@+id/time16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button5"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/time2"
+        android:layout_alignStart="@+id/time2"
+        android:layout_alignRight="@+id/time2"
+        android:layout_alignEnd="@+id/time2" />
+
+    <EditText
+        android:id="@+id/time0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button6"
+        android:layout_alignLeft="@+id/time16"
+        android:layout_alignStart="@+id/time16"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignRight="@+id/time16"
+        android:layout_alignEnd="@+id/time16" />
+
+    <EditText
+        android:id="@+id/time15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button7"
+        android:layout_alignLeft="@+id/time0"
+        android:layout_alignStart="@+id/time0"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignRight="@+id/time0"
+        android:layout_alignEnd="@+id/time0" />
+
+    <EditText
+        android:id="@+id/time13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button8"
+        android:layout_alignLeft="@+id/time15"
+        android:layout_alignStart="@+id/time15"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignRight="@+id/time15"
+        android:layout_alignEnd="@+id/time15" />
+
+    <EditText
+        android:id="@+id/time12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/button9"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/time13"
+        android:layout_alignStart="@+id/time13"
+        android:layout_alignRight="@+id/time13"
+        android:layout_alignEnd="@+id/time13" />
+
+    <EditText
+        android:id="@+id/time14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/time12"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/time12"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignRight="@+id/time12"
+        android:layout_alignEnd="@+id/time12" />
+
+    <EditText
+        android:id="@+id/espID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Enter Unique ESP SSID" />
+
+    <ProgressBar
+        android:id="@+id/batteryBar"
+        android:minWidth="200dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/espID"
+        android:layout_alignStart="@+id/espID"
+        android:layout_below="@+id/batteryBar"
+        android:text="TextView"
+        android:gravity="center"
+        android:layout_alignRight="@+id/espID"
+        android:layout_alignEnd="@+id/espID" />
+
+
+
+</RelativeLayout>
